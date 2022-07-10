@@ -6,6 +6,10 @@
 </head>
 
 <body>
+<style>
+ a, p {color: red ;}
+</style>
+<link rel="stylesheet" href="html-basic.css">
     <h1>lorem</h1>
     <h2>Lorem,ipsum</h2>
     <h3>lorem,ipsum dolor.</h3>
@@ -37,13 +41,15 @@
       <strong>有什么</strong>
       <b>区别</b>
       <u>这个？</u>
-      <em>  这个？</em>
+      <i>  这个？</i>
     </div>
     &lt;!-- 这段注释需要出现在页面里面 --&gt;
-    <pre><code>    function a() {
+    <pre>
+      <code>    function a() {
             return 8
           }
-        }</code>
+        }
+      </code>
     </pre>
 
     <hr>
@@ -99,6 +105,7 @@
           <label><input type="radio" name="gender" value="male">男</label>
           <label><input type="radio" name="gender" value="famale">  女</label>
         </dd>
+
         <dt>年龄</dt>
         <dd>
           <select name="age">
@@ -150,12 +157,17 @@
     <div>
     </div>
     <table border="5">
-      <tr>
-        <th>编号</th>
-        <th>品名</th>
-        <th>进价</th>
-        <th>出价</th>
-      </tr>
+      <col>
+      <col bgcolor="red">
+
+      <thead>
+        <tr>
+          <th>编号</th>
+          <th>品名</th>
+          <th>进价</th>
+          <th>出价</th>
+        </tr>
+     </thead>
       <tr>
         <th>aaa</th>
         <td>a</td>
