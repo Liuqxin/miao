@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+  /* background-color: rgba(,0,0,0.08); */
+  /* box-shadow: inset 0 0 1px red; */
+
+}
+html {
+  /* zoom: 2; */
+  background-color: rgb(33,37,43);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+}
+img {position: relative;
+  width: 20px;
+  height: 20px;
+  margin: -3px;
+
+
+}
+div {
+  position: relative;
+  display: inline-block;
+  color: rgba(212,212,212);
+  border-radius: 15px;
+}
+ul {
+  list-style: none;
+  display: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+  background-color: rgb(60, 60, 60);
+
+}
+div:hover{
+  background-color: rgb(60, 60, 60);
+
+}
+div:hover > ul {
+  display: block;
+
+}
+ul li:hover {
+  background-color:rgb(4,57,94);
+  position: relative;
+
+}
+div ul li:hover > ul{
+  display: block;
+  list-style: none;
+  position: absolute;
+  white-space: nowrap;
+  left: 160px;
+  top: 0px;
+}
+
+
+  </style>
+  <meta charset="utf-8">
+  <title>Vscode</title>
+</head>
+<body>
+  <img src="C:\Users\Administrator\Desktop\miao\vsc图标.png" alt="">
+
+  <div>文件(F)
+    <ul>
+      <li>新建文本文件</li>
+      <li>新建文件</li>
+      <li>新建窗口</li>
+      <hr>
+      <li>打开文件</li>
+      <li>打开文件夹</li>
+      <li>从文件打开文件区</li>
+      <li>打开最近的文件</li>
+      <hr>
+      <li>将文件夹添加到工作区</li>
+      <li>将工作区另存为</li>
+      <li>复制工作区</li>
+      <hr>
+      <li>保存</li>
+      <li>另存为</li>
+      <li>全部保存</li>
+      <hr>
+      <li>共享</li>
+      <hr>
+      <li>自动保存</li>
+      <li >首选项>>
+        <ul>
+          <li>设置</li>
+          <li>练级服务设置</li>
+          <li>遥测设置</li>
+          <li>扩展</li>
+          <li>键盘快捷方式</li>
+          <li>从-中迁移键盘快捷方式...</li>
+          <li>配置用户代码片段</li>
+          <li>颜色主题</li>
+          <li>文件图标主题</li>
+          <li>产品图标主题</li>
+          <li>打开设置同步...</li>
+        </ul>
+      </li>
+      <li>还原文件</li>
+      <li>关闭编辑器</li>
+      <li>关闭窗口</li>
+      <li>推出</li>
+    </ul>
+  </div>
+  <div>编辑(E)
+    <ul>
+      <li>撤销</li>
+      <li>恢复</li>
+      <li>剪切</li>
+      <li>复制</li>
+      <li>粘贴</li>
+      <li>查找</li>
+      <li>替换</li>
+      <li>从文件中查找</li>
+      <li>从文件中替换</li>
+      <li>切换行注释</li>
+      <li>切换块注释</li>
+      <li>Emmet:展开缩写</li>
+    </ul>
+  </div>
+  <div>选择(S)
+    <ul>
+      <li>全选</li>
+      <li>扩大选区</li>
+      <li>缩小选区</li>
+      <li>向上复制一行</li>
+      <li>向下复制一行</li>
+      <li>向上移动一行</li>
+      <li>向下移动一行</li>
+      <li>重复选择</li>
+      <li>向上添加光标</li>
+      <li>向下添加光标</li>
+      <li>在行尾添加光标</li>
+      <li>添加下一个匹配项</li>
+      <li>添加上一个匹配项</li>
+      <li>选择所有匹配项</li>
+      <li>切换为“CTRL+单机”进行多光标选择</li>
+      <li>列选择模式</li>
+    </ul>
+  </div>
+  <div>查看(V)
+    <ul>
+      <li>命令面板</li>
+      <li>打开视图</li>
+      <li>外观</li>
+      <li>编辐器布局</li>
+      <li>资源管理器</li>
+      <li>搜索</li>
+      <li>源代码管理</li>
+      <li>运行</li>
+      <li>扩展</li>
+      <li>问题</li>
+      <li>输出</li>
+      <li>调试控制台</li>
+      <li>终端</li>
+      <li>自动换行</li>
+      <li>显示缩略图</li>
+      <li>显示导航痕迹</li>
+      <li>显示空格</li>
+      <li>显示控制字符</li>
+    </ul>
+  </div>
+  <div>转到(G)
+    <ul>
+      <li>返回</li>
+      <li>前进</li>
+      <li>上次编辑位置</li>
+      <li>切换编辑器</li>
+      <li>切换组</li>
+      <li>转到文件...</li>
+      <li>转到工作区中的符号</li>
+      <li>转到编辑器中的符号...</li>
+      <li>转到定义</li>
+      <li>转到类型定义</li>
+      <li>转到声明</li>
+      <li>转到现实</li>
+      <li>转到引用</li>
+      <li>转到行/列...</li>
+      <li>转到括号</li>
+      <li>下一个问题</li>
+      <li>下一个问题</li>
+      <li>上一个更改</li>
+      <li>上一个更改</li>
+    </ul>
+  </div>
+  <div>运行(R)
+    <ul>
+      <li>启动调试</li>
+      <li>以非调试模式运行</li>
+      <li>停止调试</li>
+      <li>重启调试</li>
+      <li>打开配置</li>
+      <li>添加配置...</li>
+      <li>单步跳过</li>
+      <li>单步执行</li>
+      <li>继续</li>
+      <li>切换断电>>
+        <Ul>
+          <li>条件断点...</li>
+          <li>内联断点    shift+F9  </li>
+          <li>函数断点...</li>
+          <li>记录点...</li>
+        </Ul>
+      </li>
+      <li>新建断电</li>
+      <li>启动所有断点</li>
+      <li>禁用所以断点</li>
+      <li>删除所以断点</li>
+      <li>安装附加调试器...</li>
+    </ul>
+  </div>
+  <div>终端(T)
+    <ul>
+      <li>新建终端     Ctrl+Shift+</li>
+      <li>拆分终端     Ctrl+Shift+5</li>
+      <li>运行任务...</li>
+      <li>运行生成任务...    Ctrl+Shift+B</li>
+      <li>运行活动文件</li>
+      <li>运行所选文本</li>
+      <li>显示正在运行的任务...</li>
+      <li>重启正式运行的任务...</li>
+      <li>终止任务...</li>
+      <li>配置任务...</li>
+      <li>配置默认生成任务...</li>
+    </ul>
+  </div>
+  <div>帮助(H)
+    <ul>
+      <li>开始</li>
+      <li>显示所有命令    Ctrl+Shift+P</li>
+      <li>编辑器操场</li>
+      <li>文档</li>
+      <li>发行说明</li>
+      <hr>
+      <li>键盘快捷方式参考 Ctrl+K Ctrl+R</li>
+      <li>视频教程</li>
+      <li>贴士和技巧</li>
+      <li>Twitter 上和我们互动</li>
+      <li>搜索功能请求</li>
+      <li>使用英文报告问题</li>
+      <hr>
+      <li>查看许可证</li>
+      <li>隐私声明</li>
+      <hr>
+      <li>切换开发人员工具     Ctrl+Shift+l</li>
+      <li>打开进程管理器</li>
+      <hr>
+      <li>检查更新...</li>
+      <li>关于</li>
+    </ul>
+  </div>
+
+</body>
+</html>
