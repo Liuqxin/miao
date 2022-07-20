@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    label {
+      display: block;
+      width: 250px;
+      height: 300px;
+      position: relative;
+      background-color: rgb(255, 255, 255);
+      cursor: pointer;
+    }
+
+    div{
+      display: block;
+      width: 220px;
+      height: 110px;
+      border-radius: 100px;
+      position: relative;
+      border: 0.5px solid black;
+      margin: auto;
+      box-shadow: 0px 0px 0px 0px inset rgb(48,243,77);
+      transition: 1s;
+    }
+    span{
+
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 0px 0px 5px  gray;
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      border: 0.5px solid rgb(212, 212, 212);
+      transition: 1s;
+
+    }
+    input{
+      display: none;
+    }
+    input:checked+div span{
+      left: 115px;
+      transition:  1s  ;
+    }
+
+    input:checked + .cheak1{
+       box-shadow: 00px 00px 0px 60px inset rgb(48,243,77);
+       transition: 1s
+
+
+    }
+
+
+
+
+  </style>
+  </head>
+  <body>
+    <label for="cheak">
+      <input type="checkbox" id="cheak">
+      <div class="cheak1">
+        <span class="b"></span>
+      </div>
+    </label>
+  </body>
+</html>
