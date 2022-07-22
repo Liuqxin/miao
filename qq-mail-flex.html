@@ -6,25 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body {
+      html,body {
         margin: 0;
+        height: 100%;
+      }
+      body{
+        flex-flow: column;
+        display: flex;
+
       }
 
       header {
         background-color: rgb(95, 158, 160);
         height: 100px;
+        flex: none;
       }
 
-      .main {
+      div {
         display: flex;
-        justify-content: space-between;
+        flex: 1;
+        overflow: auto;
+        height: 100%;
       }
 
       aside {
-        flex: 1;
         background-color: rgb(160, 82, 45);
-        height: calc(100vh - 100px);
         overflow: auto;
+        width: 200px;
+        height: 100%;
       }
 
       aside ul {
@@ -32,18 +41,17 @@
         padding-left: 40px;
       }
 
-      article {
+      main {
         background-color: rgb(0, 128, 128);
-        flex: 7;
-        height: calc(100vh - 100px);
+        flex: 1;
         overflow: auto;
+
       }
     </style>
   </head>
   <body>
     <header></header>
-
-    <div class="main">
+    <div >
       <aside>
         <ul>
           <li></li>
@@ -149,8 +157,7 @@
           <li></li>
         </ul>
       </aside>
-
-      <article>
+      <main>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
         corrupti consectetur dolore impedit culpa, omnis incidunt minima
         voluptatum facere mollitia! Quo asperiores ratione quis qui. Eligendi,
@@ -217,7 +224,7 @@
         molestiae eos, voluptatibus accusantium, incidunt cum rerum animi sunt
         laboriosam omnis perferendis dolorum reiciendis quaerat possimus.
         Dolores mollitia unde voluptates incidunt amet!
-      </article>
+      </main>
     </div>
   </body>
 </html>
