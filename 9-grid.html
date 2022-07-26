@@ -1,88 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    .table1{
+    .table1 {
       border-collapse: collapse;
       width: 150px;
     }
-    .table1 tbody{
+
+    .table1 tbody {
       height: 150px;
       border-collapse: collapse;
     }
+
     .table1 tr {
       border: solid blue 5px;
       text-align: center;
     }
-     .table1 col{
+
+    .table1 col {
       border: solid blue 5px;
     }
 
-    .table1 tbody tr td:hover{
-      border:  solid 5px ;
-      border-color: red ;
+    .table1 tbody tr td:hover {
+      border: solid 5px;
+      border-color: red;
       cursor: pointer;
     }
-    main{
-      display: flex;
-      width: 250px;
-      flex-shrink: 0;
-      flex-wrap: wrap;
-      line-height: 50px;
-    }
-    main ul{
-      list-style-type: none;
-      margin: 0;
-      display: hiddle;
 
+
+
+
+    main ul {
+      list-style: none;
+      margin: auto;
+      width: 170px;
+      overflow: hidden;
+      padding: 0;
+      padding-bottom: 5px;
     }
+
     main ul li {
       border: solid blue 5px;
       height: 50px;
       width: 50px;
       text-align: center;
-      margin: 0 -5px -5px 0 ;
-      flex-wrap: wrap;
-      display: inline-block;
-
+      margin: 0 -5px -5px 0;
+      float: left;
+      position: relative;
     }
-    main ul li:nth-last-of-type(4+n){
-      margin: -5px -5px -5px 0 ;
-    }
-    main ul li:hover{
-      border: red solid 5px ;
-      z-index: 1;
-
-
+    main ul li:hover {
+      border: red solid 5px;
+      z-index: 8;
     }
 
-     div{
+    .div1 {
       display: flex;
       background-color: green;
       border-bottom: 5px solid red;
       height: 100px;
       width: 200px;
       font-size: 20px;
-      transition: background-color 0s ;
+      transition: background-color 0s;
       align-items: flex-end;
     }
-    div:hover{
+
+    .div1:hover {
       background-color: #a0d0e0;
       font-size: 50px;
-      transition: font-size 4s ;
+      transition: font-size 4s;
+
     }
 
+    section {
+      display: flex;
+      flex-flow: wrap;
+      width: 170px;
+    }
 
+    section div {
+      width: 50px;
+      height: 50px;
+      border: 5px solid blue;
+      margin: 0px -5px -5px 0;
+      position: relative;
 
+    }
 
-
+    section div:hover {
+      border: 5px solid red;
+      z-index: 8;
+    }
 
   </style>
 </head>
+
 <body>
   <table class="table1">
     <colgroup>
@@ -107,27 +123,36 @@
         <td>9</td>
       </tr>
     </tbody>
-  <main class="main2">
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-    </ul>
-    <ul>
-      <li>4</li>
-      <li>5</li>
-      <li>6</li>
-    </ul>
-    <ul>
-      <li>7</li>
-      <li>8</li>
-      <li>9</li>
-    </ul>
-  </main>
+    <main class="main2">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+      </ul>
+    </main>
+    <section>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </section>
 
-  <div>
-    订阅博客
-  </div>
+
+    <div class="div1">
+      订阅博客
+    </div>
 
 </body>
+
 </html>
