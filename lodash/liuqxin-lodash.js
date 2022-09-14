@@ -18,8 +18,32 @@ var lodash = {
     return res
   },
 
-  compact: function() {},
+  compact: function (array) {
+    var res = []
+    for (var i = 0; i < array.length; i++){
+      if (array[i] == false || array[i] == null || array[i] == 0 || array[i] == "" || array[i] == undefined || array[i] == NaN) {
+        i++
+      } else {
+        res.push(array[i])
+      }
 
-  fill: function() {},
+    }
+    return res
+  },
+
+  fill: function (array, value) {
+    for (var i = 0; i < array.length; i++){
+      array[i]=value
+    }
+    return array
+  },
+  drop: function (array, n) {
+    for (var i = 0; i < array.length; i++){
+      array[i]=value
+    }
+    return array
+  },
+
+
 
 }
