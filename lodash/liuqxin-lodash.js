@@ -22,7 +22,7 @@ var liuqxin = {
     var res = []
     for (var i = 0; i < array.length; i++){
       if (array[i] == false || array[i] == null || array[i] == 0 || array[i] == "" || array[i] == undefined || array[i] == NaN) {
-        i++
+        continue
       } else {
         res.push(array[i])
       }
@@ -31,18 +31,16 @@ var liuqxin = {
     return res
   },
 
-  fill: function (array, value) {
-    for (var i = 0; i < array.length; i++){
+  fill: function (array, value,n,m) {
+    for (var i = n; i < m; i++){
       array[i]=value
     }
     return array
   },
   drop: function (array, n) {
     var res = []
-    if (n > array.length) {
-      return []
-    }
-    for (var i = 0; i < n; i++){
+
+    for (var i = n-1; i < array.length; i++){
       res[i]=array[i]
     }
     return res
@@ -111,15 +109,91 @@ var liuqxin = {
     return map
 
   },
-  head: function (array) {
-    if (array.length == 0) {
-      return array
-    }
-    return array[0]
+  indexOf: function indexOf(array, value, [fromIndex=0]) {
+    if (fromIndex >= 0) {
+      for (var i = fromIndex; i < array.length; i++){
+        if (array[i] == value) {
+          return i
+        }
+      }
 
+    } else {
+      for (var i = array.length-1; i >=0; i--){
+        if (array[i] == value) {
+          return i
+        }
+      }
+    }
+    return -1
+  },
+  lastIndexOf: function lastIndexOf(array, value, [fromIndex=array.length-1]) {
+
+      for (var i = fromIndex; i >=0; i--){
+        if (array[i] == value) {
+          return i
+        }
+      }
+
+    return -1
+  },
+  initial: function initial(array) {
+    array.pop()
+    return array
+  },
+  join: function join(array, [separator = ',']) {
+    var res = ''
+    for (var i = 0; i < array.length; i++){
+      res += array[i]
+      if (i == array.length - 1) {
+        return res
+      }
+      res +=separator
+    }
   },
 
+  last: function last(array) {
 
+    return array[array.length-1]
+  },
+
+  pull: function pull(array, [values]) {
+    var res = []
+    for (var i = 0; i < array.length; i++) {
+      if (array[i] != values) {
+        res.push(array[i])
+      }
+    }
+    return res
+  },
+  reverse: function reverse(array) {
+    var i = 0
+    var j = array.length - 1
+    while (i < j) {
+      var t = array[i]
+      array[i] = array[j]
+      array[j] = t
+    }
+    return array
+
+  },
+  groupBy: function groupBy(collection, [iteratee=_.identity]) {
+    var map = {}
+    var j = array.length - 1
+    for (var i = 0; i < collection.length; i++) {
+      var t = collection[i].iteratee
+      map[t].push(t)
+    }
+    return map
+  },
+  keyBy: function keyBy(collection, [iteratee=_.identity]) {
+    var map = {}
+    var j = array.length - 1
+    for (var i = 0; i < collection.length; i++) {
+      var t = collection[i].iteratee
+      map[t].push(t)
+    }
+    return map
+  },
 
 
 }
